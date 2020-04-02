@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Wrap from './components/Wrap';
+// import App from './App';
+
+// import App from './Hooks/01.useState';
+// import App from './Hooks/03.useRef';
+import App from './Hooks/04.useMemo';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div style={{ width: 980, margin: '0 auto' }}>
+      <Wrap title='React Hooks'>
+        <App />
+      </Wrap>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
